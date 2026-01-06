@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shah Sales - Authorized Distribution Agency (Navsari District)</title>
+    <style>
+        /* Classic Web 2.0 Color Palette */
+        :root {
+            --header-blue: #003366;
+            --link-blue: #0066cc;
+            --accent-orange: #ff9900;
+            --bg-grey: #f0f0f0;
+            --border-color: #cccccc;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #d1d1d1;
+            margin: 0;
+            padding: 0;
+            color: #333333;
+        }
+
+        /* Fixed Width Container */
+        #main-wrapper {
+            width: 980px;
+            margin: 20px auto;
+            background-color: #ffffff;
+            border: 1px solid #999;
+            box-shadow: 0px 0px 15px rgba(0,0,0,0.3);
+            min-height: 800px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Top Utility Bar */
+        .top-bar {
+            background-color: #333;
+            color: #eee;
+            padding: 5px 15px;
+            font-size: 11px;
+            text-transform: uppercase;
+        }
+
+        /* Header Area */
+        header {
+            padding: 25px 20px;
+            border-bottom: 5px solid var(--header-blue);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-text h1 {
+            margin: 0;
+            font-size: 42px;
+            color: var(--header-blue);
+            letter-spacing: -1px;
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        .logo-text p {
+            margin: 0;
+            font-size: 13px;
+            color: #666;
+            font-style: italic;
+        }
+
+        .contact-header {
+            text-align: right;
+            font-size: 14px;
+        }
+
+        .contact-header strong {
+            color: var(--header-blue);
+        }
+
+        /* Navigation Menu */
+        nav {
+            background: linear-gradient(to bottom, #444, #111);
+            padding: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            border-right: 1px solid #444;
+        }
+
+        nav ul li a {
+            display: block;
+            padding: 12px 25px;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 13px;
+            cursor: pointer;
+        }
+
+        nav ul li a:hover, nav ul li a.active {
+            background-color: var(--header-blue);
+            color: var(--accent-orange);
+        }
+
+        /* Hero Image / Banner */
+        .hero-banner {
+            background-color: #eee;
+            border-bottom: 1px solid var(--border-color);
+            position: relative;
+        }
+
+        .hero-banner img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            display: block;
+            opacity: 0.7;
+        }
+
+        .banner-caption {
+            position: absolute;
+            top: 40px;
+            left: 40px;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 15px 25px;
+            border-left: 8px solid var(--header-blue);
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+        }
+
+        .banner-caption h2 {
+            margin: 0;
+            color: var(--header-blue);
+            font-size: 22px;
+            text-transform: uppercase;
+        }
+
+        /* Content Layout */
+        .content-area {
+            display: flex;
+            padding: 30px 20px;
+            flex-grow: 1;
+        }
+
+        .page-section {
+            display: none; /* Hidden by default */
+            width: 100%;
+        }
+
+        .page-section.active {
+            display: flex; /* Shown when active */
+        }
+
+        main {
+            flex: 2;
+            padding-right: 30px;
+        }
+
+        aside {
+            flex: 1;
+        }
+
+        h3 {
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+            color: var(--header-blue);
+            font-size: 20px;
+            text-transform: uppercase;
+            margin-top: 0;
+        }
+
+        .box {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+
+        .box h4 {
+            margin-top: 0;
+            color: #333;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 5px;
+            font-size: 16px;
+        }
+
+        /* Typography & Lists */
+        p { line-height: 1.5; font-size: 14px; }
+        .styled-list { padding-left: 20px; }
+        .styled-list li { margin-bottom: 10px; font-size: 14px; }
+
+        /* Tables */
+        table.data-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13px;
+            margin-top: 15px;
+        }
+
+        table.data-table th {
+            background-color: #eee;
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
+            color: var(--header-blue);
+        }
+
+        table.data-table td {
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+
+        /* Enquiry Form */
+        .enquiry-form input, .enquiry-form select, .enquiry-form textarea {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 8px;
+            margin-bottom: 12px;
+            border: 1px solid #ccc;
+            font-family: Arial, sans-serif;
+        }
+
+        .submit-btn {
+            background-color: var(--header-blue);
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            cursor: pointer;
+            font-weight: bold;
+            width: 100%;
+            text-transform: uppercase;
+        }
+
+        .submit-btn:hover { background-color: #004488; }
+
+        /* Brand Grid */
+        .brand-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+        .brand-item {
+            border: 1px solid #eee;
+            padding: 10px;
+            text-align: center;
+            background: #fff;
+        }
+        .brand-item strong { display: block; color: var(--header-blue); margin-bottom: 5px; }
+
+        /* Footer */
+        footer {
+            background-color: #222;
+            color: #bbb;
+            padding: 30px 20px;
+            font-size: 12px;
+            text-align: center;
+            margin-top: auto;
+        }
+
+        .footer-cols {
+            display: flex;
+            justify-content: space-between;
+            text-align: left;
+            margin-bottom: 20px;
+            max-width: 940px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .footer-cols div { width: 30%; }
+        .footer-cols h5 { color: #fff; margin-bottom: 12px; font-size: 14px; border-bottom: 1px solid #444; padding-bottom: 5px; }
+
+        .copyright {
+            border-top: 1px solid #444;
+            padding-top: 15px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="main-wrapper">
+    <div class="top-bar">
+        Authorized Distribution Agency - Serving Navsari District Since 1995
+    </div>
+
+    <header>
+        <div class="logo-text">
+            <h1>SHAH SALES</h1>
+            <p>Reliable Bridge between Manufacturers & Retailers</p>
+        </div>
+        <div class="contact-header">
+            <strong>Agency Hub: Navsari (South Gujarat)</strong><br>
+            Office: +91 2637 2XXXXX<br>
+            Direct: +91 98XXX XXXXX
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a onclick="showPage('home')" id="nav-home" class="active">Home</a></li>
+            <li><a onclick="showPage('about')" id="nav-about">About Agency</a></li>
+            <li><a onclick="showPage('network')" id="nav-network">Retail Network</a></li>
+            <li><a onclick="showPage('brands')" id="nav-brands">Brands & Products</a></li>
+            <li><a onclick="showPage('contact')" id="nav-contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <div class="hero-banner">
+        <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1000&q=80" alt="Supply Chain">
+        <div class="banner-caption">
+            <h2 id="banner-text">District Distribution Experts</h2>
+            <p>Navsari's most trusted supply chain partner for 25+ years.</p>
+        </div>
+    </div>
+
+    <div class="content-area">
+        
+        <!-- HOME PAGE -->
+        <section id="page-home" class="page-section active">
+            <main>
+                <h3>Connecting Brands to Navsari</h3>
+                <p>Welcome to <strong>Shah Sales Agency</strong>. Based in Navsari, Gujarat, we are a leading distribution firm specializing in localized market penetration. We bridge the gap between national manufacturers and the vibrant retail landscape of the Navsari district.</p>
+                
+                <p>Our operation is built on three pillars: <strong>Local Expertise</strong>, <strong>Reliable Logistics</strong>, and <strong>Financial Transparency</strong>.</p>
+
+                <div style="background: #f0f7ff; padding: 15px; border: 1px solid #b6d4fe; margin: 20px 0;">
+                    <h4 style="margin-top: 0; color: #084298;">Why Choose a District-Specific Agency?</h4>
+                    <p style="margin-bottom: 0;">State-wide distributors often overlook the unique buying patterns of South Gujarat's interior talukas. We provide 100% focus on Navsari, Gandevi, and Bansda, ensuring your brand is present in even the smallest village shop.</p>
+                </div>
+
+                <h3>Service Overview</h3>
+                <table class="data-table">
+                    <tr>
+                        <th>For Manufacturers</th>
+                        <th>For Retailers</th>
+                    </tr>
+                    <tr>
+                        <td>Market Research & Launch Support</td>
+                        <td>Easy Online/Call Ordering</td>
+                    </tr>
+                    <tr>
+                        <td>Warehousing & Inventory Control</td>
+                        <td>Door-step Delivery Routes</td>
+                    </tr>
+                    <tr>
+                        <td>Primary Sales Reporting</td>
+                        <td>Genuine Scheme Passing</td>
+                    </tr>
+                </table>
+            </main>
+            <aside>
+                <div class="box">
+                    <h4>Quick Statistics</h4>
+                    <ul style="font-size: 13px; list-style: none; padding: 0;">
+                        <li>📅 Established: 1995</li>
+                        <li>🏬 Retailers: 500+</li>
+                        <li>📍 Talukas Covered: 6</li>
+                        <li>🚚 Delivery Fleet: 5 Vehicles</li>
+                    </ul>
+                </div>
+                <div class="box">
+                    <h4>Partner With Us</h4>
+                    <p style="font-size: 13px;">Looking to expand your brand in Navsari district? Contact our agency manager today.</p>
+                    <button class="submit-btn" style="font-size: 12px; padding: 8px;" onclick="showPage('contact')">Inquire Now</button>
+                </div>
+            </aside>
+        </section>
+
+        <!-- ABOUT PAGE -->
+        <section id="page-about" class="page-section">
+            <main>
+                <h3>About Shah Sales Agency</h3>
+                <p>Founded in 1995 by the Shah family, our agency began with a single brand and a small warehouse in Navsari. Over the decades, we have evolved into a sophisticated distribution hub that manages over 15 major brand portfolios.</p>
+                
+                <h4>Our Mission</h4>
+                <p>To provide manufacturers with a high-integrity, zero-leakage distribution channel while empowering local retailers with consistent stock and growth opportunities.</p>
+
+                <h4>Our Infrastructure</h4>
+                <ul class="styled-list">
+                    <li><strong>Warehousing:</strong> Two localized warehouses totaling 8,000 sq. ft. in Navsari GIDC.</li>
+                    <li><strong>Technology:</strong> Fully computerized billing and stock management systems for real-time reporting.</li>
+                    <li><strong>Team:</strong> 12 dedicated field sales officers (FSOs) who visit every retail point weekly.</li>
+                    <li><strong>Logistics:</strong> Dedicated transport fleet for time-bound secondary distribution.</li>
+                </ul>
+
+                <img src="https://via.placeholder.com/600x200?text=Our+Warehouse+Facility+at+Navsari+GIDC" alt="Warehouse" style="width: 100%; border: 1px solid #ddd; margin-top: 15px;">
+            </main>
+            <aside>
+                <div class="box">
+                    <h4>Our Core Values</h4>
+                    <p style="font-size: 13px;"><strong>Integrity:</strong> We pass on all brand schemes directly to retailers.<br><br>
+                    <strong>Reliability:</strong> Rain or shine, our delivery routes are never interrupted.<br><br>
+                    <strong>Local Knowledge:</strong> We speak the language of Navsari's traders.</p>
+                </div>
+            </aside>
+        </section>
+
+        <!-- NETWORK PAGE -->
+        <section id="page-network" class="page-section">
+            <main>
+                <h3>Our Retail Network</h3>
+                <p>Shah Sales maintains an active database of over <strong>500+ retail points</strong> across the Navsari district. Our reach is categorized by taluka to ensure localized marketing support.</p>
+                
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Taluka Name</th>
+                            <th>Active Outlets</th>
+                            <th>Market Type</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Navsari / Jalalpore</td>
+                            <td>210 Outlets</td>
+                            <td>Urban / Semi-Urban</td>
+                        </tr>
+                        <tr>
+                            <td>Gandevi / Bilimora</td>
+                            <td>145 Outlets</td>
+                            <td>Commercial / Trade Hub</td>
+                        </tr>
+                        <tr>
+                            <td>Chikhli</td>
+                            <td>85 Outlets</td>
+                            <td>Rural Distribution</td>
+                        </tr>
+                        <tr>
+                            <td>Bansda / Khergam</td>
+                            <td>60 Outlets</td>
+                            <td>Interior / Hilly Reach</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h4 style="margin-top: 25px;">Become a Retail Partner</h4>
+                <p>Are you a new shop owner in Navsari district? By joining the Shah Sales network, you gain access to multiple leading brands, credit facilities (subject to verification), and free door-step delivery.</p>
+            </main>
+            <aside>
+                <div class="box">
+                    <h4>Logistics Frequency</h4>
+                    <p style="font-size: 13px;"><strong>Navsari/Bilimora:</strong> Daily Delivery<br>
+                    <strong>Chikhli:</strong> Tues, Thurs, Sat<br>
+                    <strong>Bansda/Khergam:</strong> Mon, Wed, Fri</p>
+                </div>
+            </aside>
+        </section>
+
+        <!-- BRANDS PAGE -->
+        <section id="page-brands" class="page-section">
+            <main>
+                <h3>Brands & Products</h3>
+                <p>We are authorized distributors for several category-leading brands. Our portfolio is carefully curated to avoid conflicts and maximize retail shelf space.</p>
+                
+                <div class="brand-grid">
+                    <div class="brand-item">
+                        <strong>FMCG & Staples</strong>
+                        <p style="font-size: 12px; color: #666;">Packaged foods, oils, and daily essentials.</p>
+                    </div>
+                    <div class="brand-item">
+                        <strong>Hardware & Tools</strong>
+                        <p style="font-size: 12px; color: #666;">Precision tools, fasteners, and industrial fixings.</p>
+                    </div>
+                    <div class="brand-item">
+                        <strong>Plastic Products</strong>
+                        <p style="font-size: 12px; color: #666;">Household plastics, storage, and piping.</p>
+                    </div>
+                    <div class="brand-item">
+                        <strong>General Merchandise</strong>
+                        <p style="font-size: 12px; color: #666;">Seasonal goods and assorted retail items.</p>
+                    </div>
+                </div>
+
+                <h4 style="margin-top: 25px;">Brand Representation</h4>
+                <p>We provide various models of agency partnership:</p>
+                <ul class="styled-list">
+                    <li><strong>C&F (Carrying and Forwarding):</strong> Total warehouse and logistics management.</li>
+                    <li><strong>Super Stockist:</strong> Managing secondary distributors for specific regions.</li>
+                    <li><strong>Authorized Agency:</strong> Exclusive retail distribution for the Navsari district.</li>
+                </ul>
+            </main>
+            <aside>
+                <div class="box">
+                    <h4>Looking for Distribution?</h4>
+                    <p style="font-size: 13px;">If you are a manufacturer wanting to launch in Navsari, we offer the most efficient route-to-market.</p>
+                    <button class="submit-btn" style="font-size: 12px;" onclick="showPage('contact')">Request Meeting</button>
+                </div>
+            </aside>
+        </section>
+
+        <!-- CONTACT PAGE -->
+        <section id="page-contact" class="page-section">
+            <main>
+                <h3>Contact Navsari Office</h3>
+                <div style="display: flex; gap: 20px;">
+                    <div style="flex: 1;">
+                        <h4 style="margin-bottom: 5px; color: var(--header-blue);">Main Warehouse & Office</h4>
+                        <p>Plot No. 45, GIDC Industrial Estate Phase 1,<br>
+                        Behind Tata Memorial Hall,<br>
+                        Navsari, Gujarat - 396445</p>
+                        
+                        <h4 style="margin-bottom: 5px; color: var(--header-blue);">Direct Contacts</h4>
+                        <p><strong>General Inquiries:</strong> +91 2637 2XXXXX<br>
+                        <strong>Sales Manager:</strong> +91 98XXX XXXXX<br>
+                        <strong>Email:</strong> info@shahsalesnavsari.com</p>
+                    </div>
+                    <div style="flex: 1; border: 1px solid #ddd; background: #eee; height: 180px; display: flex; align-items: center; justify-content: center; font-size: 12px; color: #666; text-align: center;">
+                        [GOOGLE MAPS EMBED PLACEHOLDER]<br>GIDC Navsari Location
+                    </div>
+                </div>
+
+                <hr style="margin: 25px 0; border: 0; border-top: 1px solid #ddd;">
+
+                <h4>Official Enquiry Form</h4>
+                <div class="enquiry-form">
+                    <form id="contactForm">
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+                            <input type="text" placeholder="Contact Person Name" required>
+                            <input type="text" placeholder="Business / Brand Name" required>
+                        </div>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+                            <input type="email" placeholder="Email Address">
+                            <input type="text" placeholder="Phone / WhatsApp Number" required>
+                        </div>
+                        <select>
+                            <option>Interest: I am a Retailer in Navsari</option>
+                            <option>Interest: I am a Manufacturer (Agency Request)</option>
+                            <option>Interest: Logistics/Job Application</option>
+                        </select>
+                        <textarea placeholder="Please describe your requirement or the brands you are dealing with..." style="height: 100px;"></textarea>
+                        <button type="button" class="submit-btn" style="width: 250px;" onclick="handleContactSubmit()">Send Message</button>
+                    </form>
+                    <div id="contact-success" style="display: none; padding: 15px; background: #d4edda; color: #155724; border: 1px solid #c3e6cb; margin-top: 10px;">
+                        <strong>Message Sent Successfully!</strong> Our district manager will call you back within 24 hours.
+                    </div>
+                </div>
+            </main>
+        </section>
+
+    </div>
+
+    <footer>
+        <div class="footer-cols">
+            <div>
+                <h5>Shah Sales Agency</h5>
+                <p>Navsari's dedicated distribution partner. Bridging brands and retailers with integrity and efficiency since 1995.</p>
+            </div>
+            <div>
+                <h5>District Areas</h5>
+                <ul style="list-style: none; padding: 0; margin: 0; line-height: 1.8;">
+                    <li>• Navsari City & Jalalpore</li>
+                    <li>• Bilimora & Gandevi</li>
+                    <li>• Chikhli & Bansda</li>
+                </ul>
+            </div>
+            <div>
+                <h5>Quick Links</h5>
+                <ul style="list-style: none; padding: 0; margin: 0; line-height: 1.8;">
+                    <li><a onclick="showPage('about')" style="color: #bbb; cursor: pointer;">About Us</a></li>
+                    <li><a onclick="showPage('brands')" style="color: #bbb; cursor: pointer;">Brands</a></li>
+                    <li><a onclick="showPage('contact')" style="color: #bbb; cursor: pointer;">Enquiry</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 1995-2026 Shah Sales Agency. All rights reserved. <br>
+            Navsari District, South Gujarat, India.
+        </div>
+    </footer>
+</div>
+
+<script>
+    function showPage(pageId) {
+        // Hide all pages
+        const pages = document.querySelectorAll('.page-section');
+        pages.forEach(p => p.classList.remove('active'));
+
+        // Deactivate all nav links
+        const navLinks = document.querySelectorAll('nav ul li a');
+        navLinks.forEach(l => l.classList.remove('active'));
+
+        // Show selected page
+        document.getElementById('page-' + pageId).classList.add('active');
+        
+        // Highlight active nav link
+        document.getElementById('nav-' + pageId).classList.add('active');
+
+        // Update banner text for variety
+        const bannerText = document.getElementById('banner-text');
+        switch(pageId) {
+            case 'about': bannerText.innerText = "Established Since 1995"; break;
+            case 'network': bannerText.innerText = "500+ Active Retail Points"; break;
+            case 'brands': bannerText.innerText = "Premium Brand Portfolio"; break;
+            case 'contact': bannerText.innerText = "Get in Touch with Us"; break;
+            default: bannerText.innerText = "District Distribution Experts";
+        }
+
+        // Scroll to top of content
+        window.scrollTo(0, 0);
+    }
+
+    function handleContactSubmit() {
+        const form = document.getElementById('contactForm');
+        const success = document.getElementById('contact-success');
+        
+        form.style.opacity = '0.5';
+        form.style.pointerEvents = 'none';
+        
+        setTimeout(() => {
+            form.style.display = 'none';
+            success.style.display = 'block';
+        }, 1000);
+    }
+</script>
+
+</body>
+</html>

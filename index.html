@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shah Sales - Authorized Distribution Agency (Navsari District)</title>
+    <title>Shah Sales - Authorized Distribution Agency | Navsari</title>
     <style>
-        /* Classic Web 2.0 Color Palette */
+        /* Professional Web 2.0 Aesthetic */
         :root {
             --header-blue: #003366;
             --link-blue: #0066cc;
@@ -29,18 +29,20 @@
             background-color: #ffffff;
             border: 1px solid #999;
             box-shadow: 0px 0px 15px rgba(0,0,0,0.3);
-            min-height: 800px;
+            min-height: 850px;
             display: flex;
             flex-direction: column;
         }
 
         /* Top Utility Bar */
         .top-bar {
-            background-color: #333;
+            background-color: #222;
             color: #eee;
-            padding: 5px 15px;
+            padding: 6px 15px;
             font-size: 11px;
             text-transform: uppercase;
+            display: flex;
+            justify-content: space-between;
         }
 
         /* Header Area */
@@ -74,6 +76,7 @@
 
         .contact-header strong {
             color: var(--header-blue);
+            font-size: 16px;
         }
 
         /* Navigation Menu */
@@ -148,12 +151,12 @@
         }
 
         .page-section {
-            display: none; /* Hidden by default */
+            display: none; 
             width: 100%;
         }
 
         .page-section.active {
-            display: flex; /* Shown when active */
+            display: flex; 
         }
 
         main {
@@ -215,7 +218,7 @@
             padding: 10px;
         }
 
-        /* Enquiry Form */
+        /* Form */
         .enquiry-form input, .enquiry-form select, .enquiry-form textarea {
             width: 100%;
             box-sizing: border-box;
@@ -237,20 +240,6 @@
         }
 
         .submit-btn:hover { background-color: #004488; }
-
-        /* Brand Grid */
-        .brand-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 15px;
-        }
-        .brand-item {
-            border: 1px solid #eee;
-            padding: 10px;
-            text-align: center;
-            background: #fff;
-        }
-        .brand-item strong { display: block; color: var(--header-blue); margin-bottom: 5px; }
 
         /* Footer */
         footer {
@@ -279,13 +268,19 @@
             border-top: 1px solid #444;
             padding-top: 15px;
         }
+
+        .contact-highlight {
+            color: var(--header-blue);
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
 
 <div id="main-wrapper">
     <div class="top-bar">
-        Authorized Distribution Agency - Serving Navsari District Since 1995
+        <span>Authorized Agency | Navsari District Distribution Specialists</span>
+        <span>Domain: <strong>www.shahsales.shop</strong></span>
     </div>
 
     <header>
@@ -294,29 +289,27 @@
             <p>Reliable Bridge between Manufacturers & Retailers</p>
         </div>
         <div class="contact-header">
-            <strong>Agency Hub: Navsari (South Gujarat)</strong><br>
-            638,638/I JUNATHANA KHATIWAD OPP. BANK OF BARODA<br>
-            NAVSARI, GUJRAT, INDIA, PIN CODE: 3964445<br>
-            <strong>Email:</strong> info@shahsales.shop<br>
-            <strong>Phone:</strong> +91-9824117631
+            <strong>Contact Support</strong><br>
+            Phone: <span class="contact-highlight">+91-9824117631</span><br>
+            Email: <span class="contact-highlight">info@shahsales.shop</span>
         </div>
     </header>
 
     <nav>
         <ul>
             <li><a onclick="showPage('home')" id="nav-home" class="active">Home</a></li>
-            <li><a onclick="showPage('about')" id="nav-about">About Agency</a></li>
-            <li><a onclick="showPage('network')" id="nav-network">Retail Network</a></li>
-            <li><a onclick="showPage('brands')" id="nav-brands">Brands & Products</a></li>
+            <li><a onclick="showPage('about')" id="nav-about">Agency Profile</a></li>
+            <li><a onclick="showPage('network')" id="nav-network">District Reach</a></li>
+            <li><a onclick="showPage('brands')" id="nav-brands">Brands</a></li>
             <li><a onclick="showPage('contact')" id="nav-contact">Contact Us</a></li>
         </ul>
     </nav>
 
     <div class="hero-banner">
-        <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1000&q=80" alt="Supply Chain">
+        <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1000&q=80" alt="Logistics">
         <div class="banner-caption">
-            <h2 id="banner-text">District Distribution Experts</h2>
-            <p>Navsari's most trusted supply chain partner for 25+ years.</p>
+            <h2 id="banner-text">Navsari District Agency</h2>
+            <p>Professional Distribution & Logistics Since 1995.</p>
         </div>
     </div>
 
@@ -325,50 +318,48 @@
         <!-- HOME PAGE -->
         <section id="page-home" class="page-section active">
             <main>
-                <h3>Connecting Brands to Navsari</h3>
-                <p>Welcome to <strong>Shah Sales Agency</strong>. Based in Navsari, Gujarat, we are a leading distribution firm specializing in localized market penetration. We bridge the gap between [...]
+                <h3>Premier Distribution in Navsari</h3>
+                <p><strong>Shah Sales</strong> is a specialized distribution agency based in Navsari, Gujarat. We take goods directly from manufacturers and distribute them across a wide network of retailers throughout the Navsari district.</p>
                 
-                <p>Our operation is built on three pillars: <strong>Local Expertise</strong>, <strong>Reliable Logistics</strong>, and <strong>Financial Transparency</strong>.</p>
+                <p>Our focus is exclusively on the Navsari market, allowing us to offer deep penetration and personalized service to every taluka, from the city center to the interior regions of Bansda and Chikhli.</p>
 
                 <div style="background: #f0f7ff; padding: 15px; border: 1px solid #b6d4fe; margin: 20px 0;">
-                    <h4 style="margin-top: 0; color: #084298;">Why Choose a District-Specific Agency?</h4>
-                    <p style="margin-bottom: 0;">State-wide distributors often overlook the unique buying patterns of South Gujarat's interior talukas. We provide 100% focus on Navsari, Gandevi, and B[...]
+                    <h4 style="margin-top: 0; color: #084298;">Our Core Business Model</h4>
+                    <p style="margin-bottom: 0;">We act as the official logistics and sales arm for brands looking to establish a strong presence in Navsari. We manage warehousing, secondary sales, and doorstep retail delivery.</p>
                 </div>
 
-                <h3>Service Overview</h3>
+                <h3>Key Statistics</h3>
                 <table class="data-table">
                     <tr>
-                        <th>For Manufacturers</th>
-                        <th>For Retailers</th>
+                        <td><strong>Established</strong></td>
+                        <td>1995</td>
                     </tr>
                     <tr>
-                        <td>Market Research & Launch Support</td>
-                        <td>Easy Online/Call Ordering</td>
+                        <td><strong>Retail Network</strong></td>
+                        <td>500+ Active Points</td>
                     </tr>
                     <tr>
-                        <td>Warehousing & Inventory Control</td>
-                        <td>Door-step Delivery Routes</td>
-                    </tr>
-                    <tr>
-                        <td>Primary Sales Reporting</td>
-                        <td>Genuine Scheme Passing</td>
+                        <td><strong>Primary Location</strong></td>
+                        <td>Junathana Khatiwad, Navsari</td>
                     </tr>
                 </table>
             </main>
             <aside>
                 <div class="box">
-                    <h4>Quick Statistics</h4>
-                    <ul style="font-size: 13px; list-style: none; padding: 0;">
-                        <li>📅 Established: 1995</li>
-                        <li>🏬 Retailers: 500+</li>
-                        <li>📍 Talukas Covered: 6</li>
-                        <li>🚚 Delivery Fleet: 5 Vehicles</li>
-                    </ul>
+                    <h4>Reach Us Instantly</h4>
+                    <p style="font-size: 13px;">
+                        <strong>Call:</strong> +91-9824117631<br>
+                        <strong>Email:</strong> info@shahsales.shop
+                    </p>
                 </div>
                 <div class="box">
-                    <h4>Partner With Us</h4>
-                    <p style="font-size: 13px;">Looking to expand your brand in Navsari district? Contact our agency manager today.</p>
-                    <button class="submit-btn" style="font-size: 12px; padding: 8px;" onclick="showPage('contact')">Inquire Now</button>
+                    <h4>Office Address</h4>
+                    <p style="font-size: 13px; line-height: 1.4;">
+                        638, 638/I JUNATHANA KHATIWAD<br>
+                        OPP. BANK OF BARODA<br>
+                        NAVSARI, GUJRAT, INDIA<br>
+                        PIN CODE: 396445
+                    </p>
                 </div>
             </aside>
         </section>
@@ -376,142 +367,56 @@
         <!-- ABOUT PAGE -->
         <section id="page-about" class="page-section">
             <main>
-                <h3>About Shah Sales Agency</h3>
-                <p>Founded in 1995 by the Shah family, our agency began with a single brand and a small warehouse in Navsari. Over the decades, we have evolved into a sophisticated distribution hub th[...]
-                
+                <h3>Agency Profile</h3>
+                <p>Shah Sales has been a cornerstone of the Navsari distribution market for over three decades. Our agency is built on the values of trust, transparency, and timely delivery.</p>
                 <h4>Our Mission</h4>
-                <p>To provide manufacturers with a high-integrity, zero-leakage distribution channel while empowering local retailers with consistent stock and growth opportunities.</p>
-
-                <h4>Our Infrastructure</h4>
-                <ul class="styled-list">
-                    <li><strong>Warehousing:</strong> Two localized warehouses totaling 8,000 sq. ft. in Navsari GIDC.</li>
-                    <li><strong>Technology:</strong> Fully computerized billing and stock management systems for real-time reporting.</li>
-                    <li><strong>Team:</strong> 12 dedicated field sales officers (FSOs) who visit every retail point weekly.</li>
-                    <li><strong>Logistics:</strong> Dedicated transport fleet for time-bound secondary distribution.</li>
-                </ul>
-
-                <img src="https://via.placeholder.com/600x200?text=Our+Warehouse+Facility+at+Navsari+GIDC" alt="Warehouse" style="width: 100%; border: 1px solid #ddd; margin-top: 15px;">
+                <p>To provide a seamless supply chain solution that benefits both our manufacturing partners and our retail network members in Navsari district.</p>
             </main>
-            <aside>
-                <div class="box">
-                    <h4>Our Core Values</h4>
-                    <p style="font-size: 13px;"><strong>Integrity:</strong> We pass on all brand schemes directly to retailers.<br><br>
-                    <strong>Reliability:</strong> Rain or shine, our delivery routes are never interrupted.<br><br>
-                    <strong>Local Knowledge:</strong> We speak the language of Navsari's traders.</p>
-                </div>
-            </aside>
         </section>
 
         <!-- NETWORK PAGE -->
         <section id="page-network" class="page-section">
             <main>
-                <h3>Our Retail Network</h3>
-                <p>Shah Sales maintains an active database of over <strong>500+ retail points</strong> across the Navsari district. Our reach is categorized by taluka to ensure localized marketing sup[...]
-                
-                <table class="data-table">
-                    <thead>
-                        <tr>
-                            <th>Taluka Name</th>
-                            <th>Active Outlets</th>
-                            <th>Market Type</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Navsari / Jalalpore</td>
-                            <td>210 Outlets</td>
-                            <td>Urban / Semi-Urban</td>
-                        </tr>
-                        <tr>
-                            <td>Gandevi / Bilimora</td>
-                            <td>145 Outlets</td>
-                            <td>Commercial / Trade Hub</td>
-                        </tr>
-                        <tr>
-                            <td>Chikhli</td>
-                            <td>85 Outlets</td>
-                            <td>Rural Distribution</td>
-                        </tr>
-                        <tr>
-                            <td>Bansda / Khergam</td>
-                            <td>60 Outlets</td>
-                            <td>Interior / Hilly Reach</td>
-                        </tr>
-                    </tbody>
-                </table>
-
-                <h4 style="margin-top: 25px;">Become a Retail Partner</h4>
-                <p>Are you a new shop owner in Navsari district? By joining the Shah Sales network, you gain access to multiple leading brands, credit facilities (subject to verification), and free do[...]
+                <h3>Our District Reach</h3>
+                <p>We provide exclusive distribution coverage in the following areas of Navsari District:</p>
+                <ul class="styled-list">
+                    <li><strong>Navsari City:</strong> Daily delivery routes.</li>
+                    <li><strong>Gandevi & Bilimora:</strong> Specialized commercial trade.</li>
+                    <li><strong>Chikhli & Bansda:</strong> Rural market penetration.</li>
+                    <li><strong>Jalalpore & Khergam:</strong> Comprehensive retail supply.</li>
+                </ul>
             </main>
-            <aside>
-                <div class="box">
-                    <h4>Logistics Frequency</h4>
-                    <p style="font-size: 13px;"><strong>Navsari/Bilimora:</strong> Daily Delivery<br>
-                    <strong>Chikhli:</strong> Tues, Thurs, Sat<br>
-                    <strong>Bansda/Khergam:</strong> Mon, Wed, Fri</p>
-                </div>
-            </aside>
         </section>
 
         <!-- BRANDS PAGE -->
         <section id="page-brands" class="page-section">
             <main>
                 <h3>Brands & Products</h3>
-                <p>We are authorized distributors for several category-leading brands. Our portfolio is carefully curated to avoid conflicts and maximize retail shelf space.</p>
-                
-                <div class="brand-grid">
-                    <div class="brand-item">
-                        <strong>FMCG & Staples</strong>
-                        <p style="font-size: 12px; color: #666;">Packaged foods, oils, and daily essentials.</p>
-                    </div>
-                    <div class="brand-item">
-                        <strong>Hardware & Tools</strong>
-                        <p style="font-size: 12px; color: #666;">Precision tools, fasteners, and industrial fixings.</p>
-                    </div>
-                    <div class="brand-item">
-                        <strong>Plastic Products</strong>
-                        <p style="font-size: 12px; color: #666;">Household plastics, storage, and piping.</p>
-                    </div>
-                    <div class="brand-item">
-                        <strong>General Merchandise</strong>
-                        <p style="font-size: 12px; color: #666;">Seasonal goods and assorted retail items.</p>
-                    </div>
-                </div>
-
-                <h4 style="margin-top: 25px;">Brand Representation</h4>
-                <p>We provide various models of agency partnership:</p>
-                <ul class="styled-list">
-                    <li><strong>C&F (Carrying and Forwarding):</strong> Total warehouse and logistics management.</li>
-                    <li><strong>Super Stockist:</strong> Managing secondary distributors for specific regions.</li>
-                    <li><strong>Authorized Agency:</strong> Exclusive retail distribution for the Navsari district.</li>
-                </ul>
+                <p>We represent leading brands across several categories including FMCG, Industrial Hardware, and Plastic Goods. Our wholesale catalog is available on request to registered retailers.</p>
             </main>
-            <aside>
-                <div class="box">
-                    <h4>Looking for Distribution?</h4>
-                    <p style="font-size: 13px;">If you are a manufacturer wanting to launch in Navsari, we offer the most efficient route-to-market.</p>
-                    <button class="submit-btn" style="font-size: 12px;" onclick="showPage('contact')">Request Meeting</button>
-                </div>
-            </aside>
         </section>
 
         <!-- CONTACT PAGE -->
         <section id="page-contact" class="page-section">
             <main>
-                <h3>Contact Navsari Office</h3>
+                <h3>Contact Details</h3>
                 <div style="display: flex; gap: 20px;">
                     <div style="flex: 1;">
-                        <h4 style="margin-bottom: 5px; color: var(--header-blue);">Main Warehouse & Office</h4>
-                        <p>638,638/I JUNATHANA KHATIWAD OPP. BANK OF BARODA,<br>
-                        NAVSARI, GUJRAT, INDIA, PIN CODE: 3964445</p>
+                        <h4 style="margin-bottom: 5px;">Head Office</h4>
+                        <p style="line-height: 1.6;">
+                            <strong>Shah Sales</strong><br>
+                            638, 638/I JUNATHANA KHATIWAD<br>
+                            OPP. BANK OF BARODA<br>
+                            NAVSARI, GUJRAT, INDIA<br>
+                            PIN CODE: 396445
+                        </p>
                         
-                        <h4 style="margin-bottom: 5px; color: var(--header-blue);">Direct Contacts</h4>
-                        <p><strong>General Inquiries:</strong> +91-9824117631<br>
-                        <strong>Sales Manager:</strong> +91-9824117631<br>
-                        <strong>Email:</strong> info@shahsales.shop</p>
-                    </div>
-                    <div style="flex: 1; border: 1px solid #ddd; background: #eee; height: 180px; display: flex; align-items: center; justify-content: center; font-size: 12px; color: #666; text-align:[...]
-                        [GOOGLE MAPS EMBED PLACEHOLDER]<br>GIDC Navsari Location
+                        <h4 style="margin-bottom: 5px;">Communication</h4>
+                        <p>
+                            <strong>Phone:</strong> +91-9824117631<br>
+                            <strong>Email:</strong> info@shahsales.shop<br>
+                            <strong>Website:</strong> www.shahsales.shop
+                        </p>
                     </div>
                 </div>
 
@@ -521,24 +426,13 @@
                 <div class="enquiry-form">
                     <form id="contactForm">
                         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
-                            <input type="text" placeholder="Contact Person Name" required>
-                            <input type="text" placeholder="Business / Brand Name" required>
+                            <input type="text" placeholder="Your Name" required>
+                            <input type="text" placeholder="Shop/Brand Name" required>
                         </div>
-                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
-                            <input type="email" placeholder="Email Address">
-                            <input type="text" placeholder="Phone / WhatsApp Number" required>
-                        </div>
-                        <select>
-                            <option>Interest: I am a Retailer in Navsari</option>
-                            <option>Interest: I am a Manufacturer (Agency Request)</option>
-                            <option>Interest: Logistics/Job Application</option>
-                        </select>
-                        <textarea placeholder="Please describe your requirement or the brands you are dealing with..." style="height: 100px;"></textarea>
-                        <button type="button" class="submit-btn" style="width: 250px;" onclick="handleContactSubmit()">Send Message</button>
+                        <input type="text" placeholder="Mobile Number" required>
+                        <textarea placeholder="Your Message / Requirement..." style="height: 80px;"></textarea>
+                        <button type="button" class="submit-btn" style="width: 200px;" onclick="alert('Thank you! We will contact you shortly.')">Send Enquiry</button>
                     </form>
-                    <div id="contact-success" style="display: none; padding: 15px; background: #d4edda; color: #155724; border: 1px solid #c3e6cb; margin-top: 10px;">
-                        <strong>Message Sent Successfully!</strong> Our district manager will call you back within 24 hours.
-                    </div>
                 </div>
             </main>
         </section>
@@ -549,27 +443,19 @@
         <div class="footer-cols">
             <div>
                 <h5>Shah Sales Agency</h5>
-                <p>Navsari's dedicated distribution partner. Bridging brands and retailers with integrity and efficiency since 1995.</p>
+                <p>Bridging brands and retailers in Navsari District since 1995. Official agency for professional distribution.</p>
             </div>
             <div>
-                <h5>District Areas</h5>
-                <ul style="list-style: none; padding: 0; margin: 0; line-height: 1.8;">
-                    <li>• Navsari City & Jalalpore</li>
-                    <li>• Bilimora & Gandevi</li>
-                    <li>• Chikhli & Bansda</li>
-                </ul>
+                <h5>Locate Us</h5>
+                <p style="font-size: 11px;">638, 638/I Junathana Khatiwad,<br>Opp. Bank of Baroda, Navsari 396445</p>
             </div>
             <div>
-                <h5>Quick Links</h5>
-                <ul style="list-style: none; padding: 0; margin: 0; line-height: 1.8;">
-                    <li><a onclick="showPage('about')" style="color: #bbb; cursor: pointer;">About Us</a></li>
-                    <li><a onclick="showPage('brands')" style="color: #bbb; cursor: pointer;">Brands</a></li>
-                    <li><a onclick="showPage('contact')" style="color: #bbb; cursor: pointer;">Enquiry</a></li>
-                </ul>
+                <h5>Support</h5>
+                <p>Call: +91-9824117631<br>Email: info@shahsales.shop</p>
             </div>
         </div>
         <div class="copyright">
-            &copy; 1995-2026 Shah Sales Agency. All rights reserved. <br>
+            &copy; 1995-2026 Shah Sales Navsari. All rights reserved. <br>
             Navsari District, South Gujarat, India.
         </div>
     </footer>
@@ -577,45 +463,22 @@
 
 <script>
     function showPage(pageId) {
-        // Hide all pages
         const pages = document.querySelectorAll('.page-section');
         pages.forEach(p => p.classList.remove('active'));
-
-        // Deactivate all nav links
         const navLinks = document.querySelectorAll('nav ul li a');
         navLinks.forEach(l => l.classList.remove('active'));
-
-        // Show selected page
         document.getElementById('page-' + pageId).classList.add('active');
-        
-        // Highlight active nav link
         document.getElementById('nav-' + pageId).classList.add('active');
-
-        // Update banner text for variety
+        
         const bannerText = document.getElementById('banner-text');
         switch(pageId) {
-            case 'about': bannerText.innerText = "Established Since 1995"; break;
-            case 'network': bannerText.innerText = "500+ Active Retail Points"; break;
-            case 'brands': bannerText.innerText = "Premium Brand Portfolio"; break;
-            case 'contact': bannerText.innerText = "Get in Touch with Us"; break;
-            default: bannerText.innerText = "District Distribution Experts";
+            case 'about': bannerText.innerText = "About Our Agency"; break;
+            case 'network': bannerText.innerText = "District Coverage Hub"; break;
+            case 'brands': bannerText.innerText = "Authorized Brand Portfolio"; break;
+            case 'contact': bannerText.innerText = "Contact Navsari Office"; break;
+            default: bannerText.innerText = "Navsari District Agency";
         }
-
-        // Scroll to top of content
         window.scrollTo(0, 0);
-    }
-
-    function handleContactSubmit() {
-        const form = document.getElementById('contactForm');
-        const success = document.getElementById('contact-success');
-        
-        form.style.opacity = '0.5';
-        form.style.pointerEvents = 'none';
-        
-        setTimeout(() => {
-            form.style.display = 'none';
-            success.style.display = 'block';
-        }, 1000);
     }
 </script>
 
